@@ -15,18 +15,29 @@ body {
     text-align: right;
 }
 .header-contacts-text {
+    margin-left: 11px;
     display: inline-block;
     color: #424242;
     font-size: 15px;
     text-decoration: none;
 }
+.wertical-line::before { 
+margin-left: 11px;
+    float: right;
+    content: "";
+    background-color: #e2e2e2;
+    display: block;
+    width: 1px;
+    height: 12px;
+}
+
 /*----------------header menu------------------*/
 .header-menu {
     padding-top: 36px;
     padding-bottom: 36px;
 }
 .icon-top-logo {
-    margin-left: 68px;
+    
     margin-top: 6px;    
     float: left;
     margin-right: 7px;
@@ -97,7 +108,7 @@ body {
 }
 
 .company-title {
-    margin-left: 139px;
+   
     margin-bottom: 5px;
     color: #ffffff;
     font-size: 48px;
@@ -105,7 +116,7 @@ body {
 }
 
 .company-slogan {
-    margin-left: 148px;
+    
     margin-bottom: 32px;
     color: #ffffff;
     font-size: 30px;
@@ -113,7 +124,7 @@ body {
 }
 
 .btn-choise {
-    margin-left: 145px;    
+       
     display: inline-block;
     padding: 25px 40px;
     background-color: #f8cd53;
@@ -135,7 +146,7 @@ body {
 }
 
 .description-title {
-    margin-left: 139px;
+    
     margin-bottom: 4px;
     color: #424242;
     font-size: 36px;
@@ -144,7 +155,7 @@ body {
 }
 
 .description-slogan {
-    margin-left: 148px;
+    
     position: relative;
     margin-bottom: 63px;
     color: #424242;
@@ -166,7 +177,7 @@ body {
 }
 
 .flex-container {
-    margin-left: 135px;
+    
     display: flex;
     justify-content: space-around;
 }
@@ -202,7 +213,6 @@ body {
 }
 
 .flex-position {
-    margin-left: 134px;
     display: flex;
     /*justify-content: center;
     flex-wrap: wrap;*/
@@ -249,7 +259,7 @@ body {
 }
 
 .section-contacts-title {
-    margin-left: 155px;
+    
     margin-bottom: 45px;
     color: #ffffff;
     font-size: 29px;
