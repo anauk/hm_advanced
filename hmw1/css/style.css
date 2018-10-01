@@ -1,0 +1,369 @@
+body {
+    font-family: 'Helvetica Neue', sans-serif;
+}
+
+.container {
+    width: 1020px;
+    margin: 0 auto;
+}
+/*----------------------------header contacts----------------*/
+.header-contacts {
+    padding-top: 13px;
+    padding-bottom: 13px;
+    background-color: #f0f2f4;
+    box-shadow: 0px 1px 0px 0px #e2e2e2;
+    text-align: right;
+}
+.header-contacts-text {
+    display: inline-block;
+    color: #424242;
+    font-size: 15px;
+    text-decoration: none;
+}
+/*----------------header menu------------------*/
+.header-menu {
+    padding-top: 36px;
+    padding-bottom: 36px;
+}
+.icon-top-logo {
+    margin-left: 68px;
+    margin-top: 6px;    
+    float: left;
+    margin-right: 7px;
+    display: inline-block;
+    background-image: url(../img/logo.png);
+    width: 74px;
+    height: 49px;
+}
+.logo-text-title {
+    margin-top: 2px;
+    float: left;
+    display: inline-block;
+    color: #424242;
+    font-size: 37px;
+    font-weight: 700;
+}
+
+.logo-text-sub {
+    float: left;
+    display: inline-block;
+    color: #424242;
+    font-size: 15px;
+}
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+    /*align-items: baseline;*/
+}
+
+.navbar-item {
+    margin-top: 11px;
+    /*margin-left: 15px;*/
+    padding: 12px 22px;
+}
+
+.navbar-menu-link {
+    display: inline-block;
+    text-decoration: none;
+    color: #424242;
+    font-size: 15px;
+    font-weight: 700;
+    text-align: center;
+}
+.navbar-menu-link:hover {
+    color: #de2b24;
+}
+.navbar-button {
+
+    border-radius: 4px;
+    background-color: #de2b24;
+    /*width: 171px;*/
+    color: #fff;
+    text-align: center;
+}
+
+/*----------------------------------title----------------------*/
+
+.title {
+    padding-top: 176px;
+    padding-bottom: 236px;
+    text-align: center;
+}
+
+.bcg-1 {
+    background-image: url(../img/Layer%2032.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.company-title {
+    margin-left: 139px;
+    margin-bottom: 5px;
+    color: #ffffff;
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.company-slogan {
+    margin-left: 148px;
+    margin-bottom: 32px;
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: 300;
+}
+
+.btn-choise {
+    margin-left: 145px;    
+    display: inline-block;
+    padding: 25px 40px;
+    background-color: #f8cd53;
+    width: 248px; 
+    color: #ffffff;
+    font-size: 23.2px;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 3px;
+}
+
+/*------------------------about us------------------------------*/
+
+.description {
+    padding-top: 102px;
+    padding-bottom: 130px;
+    text-align: center;
+}
+
+.description-title {
+    margin-left: 139px;
+    margin-bottom: 4px;
+    color: #424242;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 26px;
+}
+
+.description-slogan {
+    margin-left: 148px;
+    position: relative;
+    margin-bottom: 63px;
+    color: #424242;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 26px;
+}
+
+.dark-line::after {
+    position: absolute;
+    content: "";
+    left: 47%;
+    margin: 0 auto;
+    margin-top: 12px;
+    display: block;
+    background-color: #424242;
+    width: 47px;
+    height: 5px;
+}
+
+.flex-container {
+    margin-left: 135px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.container-width {
+    width: 250px;
+}
+
+.img-title {
+    margin-top: 28px;
+    margin-bottom: 14px;
+    color: #424242;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.img-description {
+    font-family: 'OpenSans', sans-serif;
+    color: #5c5c5c;
+    font-size: 13.5px;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: center;
+}
+
+/*----------------------work-project-------------------------*/
+
+.work-project {
+    padding-top: 110px;
+    padding-bottom: 130px;
+    background-color: #de2b24;
+    text-align: center;
+}
+
+.flex-position {
+    margin-left: 134px;
+    display: flex;
+    /*justify-content: center;
+    flex-wrap: wrap;*/
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.landing-box {
+    padding-top: 74px;
+    padding-bottom: 74px;
+    text-align: center;
+    background-color: #f35e59;
+    width: 255px;
+}
+
+.flex-wight-box {
+    width: 25%;
+}
+
+.project-name {
+    margin-top: 26px;
+    color: #ffffff;
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.color-text {
+    color: #ffffff;
+}
+
+.project-description {
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+/*----------------------------section-contacts-------------------*/
+
+.section-contacts {
+    padding-top: 90px;
+    padding-bottom: 85px;
+    background-color: #2a2a2a;
+    text-align: center;
+}
+
+.section-contacts-title {
+    margin-left: 155px;
+    margin-bottom: 45px;
+    color: #ffffff;
+    font-size: 29px;
+    font-weight: 700;
+    line-height: 22px;
+}
+
+.section-contacts-slogan {
+    margin-top: 36px;
+    margin-bottom: 31px;
+    font-family: 'OpenSans', sans-serif;
+    color: #cecece;
+    font-size: 14px;
+    line-height: 22px;
+}
+
+/*
+Icon classes can be used entirely standalone. They are named after their original file names.
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+
+.icon-bg-facebook_icon {
+    background-image: url(../img/sprite.png);
+    background-position: -41px 0px;
+    width: 12px;
+    height: 22px;
+    display: inline-block;
+    margin-right: 16px;
+margin-left: 75px;
+}
+
+.icon-bg-google_plus_icon {
+    background-image: url(../img/sprite.png);
+    background-position: 0px 0px;
+    width: 20px;
+    height: 22px;
+    display: inline-block;
+    margin-right: 16px;
+}
+
+.icon-bg-in_icon {
+    background-image: url(../img/sprite.png);
+    background-position: -20px 0px;
+    width: 21px;
+    height: 19px;
+    display: inline-block;
+    margin-right: 16px;
+}
+
+.icon-bg-twitter_icon {
+    background-image: url(../img/sprite.png);
+    background-position: 0px -22px;
+    width: 21px;
+    height: 17px;
+    display: inline-block;
+    margin-right: 16px;
+}
+
+.send-msg-field {
+    padding-top: 17px;
+    padding-bottom: 14px;
+    padding-left: 22px;
+    margin-bottom: 28px;
+    width: 683px;
+    border-radius: 1px;
+    background-color: #515151;
+    font-family: 'OpenSans', sans-serif;
+    font-size: 14px;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.send-smg-button {
+    display: block;
+    margin: 0 auto;
+    font-family: 'Helvetica', sans-serif;
+    color: #ffffff;
+    font-size: 17px;
+    font-weight: 700;
+    text-align: center;
+    border-radius: 1px;
+    border: 2px solid #515151;
+    background-color: rgba(243, 243, 243, 0);
+    width: 153px;
+    height: 53px;
+    box-sizing: border-box;
+}
+
+/*------------------------------footer-----------------------*/
+
+.footer {
+    padding-top: 19px;
+    padding-bottom: 27px;
+    background-color: #515151;
+    text-align: center;
+}
+
+.footer-description {
+    font-family: 'OpenSans', sans-serif;
+    color: #cecece;
+    font-size: 14px;
+    line-height: 27px;
+}
