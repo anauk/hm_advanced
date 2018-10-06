@@ -6,54 +6,75 @@
 * @param stuffing    Начинка
 * @throws {HamburgerException}  При неправильном использовании
 */
-
 function Hamburger(size, stuffing) {
-    /* Размеры, виды начинок и добавок */
-const SIZE_SMALL = 20;
-const SIZE_LARGE = 40;
-const STUFFING_CHEESE = 20;
-const STUFFING_SALAD = 5;
-const STUFFING_POTATO = 10;
-const TOPPING_MAYO = 5;
-const TOPPING_SPICE = 0;
-    this.size = [SIZE_LARGE, SIZE_SMALL];
-    this.stuffing = [STUFFING_CHEESE, STUFFING_POTATO, STUFFING_SALAD];
-    this.getSize =()=>{
-        let res = 0;
-        for(let i = 0; i<size.length; i++) {
-            res += size[i];
+            var topping = [];
+            this.getTopping = function () {
+                return topping;
+            };
+
+            this.setTopping = function (tops) {
+                if(typeof tops == 'object' ){
+                    topping = tops
+                }else{
+                    topping.push(tops)
+                }
+            }
         }
-        return res;
-    }
-    this.getStuffing =() => {
-        let staf = 0;
-        for(let i = 0; i<stuffing.length; i++) {
-            staf += stuffing[i];
+
+        Hamburger.SIZE_SMALL = 0;
+        Hamburger.SIZE_LARGE = 1;
+        Hamburger.STUFFING_CHEESE = 2;
+        Hamburger.STUFFING_SALAD = 3;
+        Hamburger.STUFFING_POTATO = 4;
+        Hamburger.TOPPING_MAYO = 5;
+        Hamburger.TOPPING_SPIcE = 6;
+
+
+        Hamburger.prototype.addTopping = function (topping) {
+            try{
+                if(!topping){
+                    throw new Error("topping miss!")
+                }
+                if(topping != Hamburger.TOPPING_MAYO && topping != Hamburger.TOPPING_SPIcE){
+                    throw new Error("bad topping!")
+
+                }
+                this.setTopping(topping);
+            }catch (e){
+                console.log(e)
+            }
+            console.log(this);
+
         }
-        return staf;
-    }
-    this.addTopping=(topping) =>{
-        topping=TOPPING_MAYO;
-    }
-    this.getToppings=() =>{
-        return topping;
-    }
-    this.calculateCalories = () => {
-        return this.getSize + this.getStuffing;
-    }
-}
-let h1 = new Hamburger(Hamburger.SIZE_SMALL, Hamburger.STUFFING_CHEESE);
-let h2 =  new Hamburger(Hamburger.SIZE_SMALL, Hamburger.STUFFING_POTATO);
-let h3 =  new Hamburger(Hamburger.SIZE_LARGE, Hamburger.STUFFING_SALAD);
-let h4 =  new Hamburger(Hamburger.SIZE_SMALL, Hamburger.STUFFING_SALAD);
-/*let h = [h1, h2, h3, h4];
-for(let i=0; i<h.length; i++) {
-    
-}*/
-console.log(h1);
-console.log(h2);
-console.log(h3);
-console.log(h4);
+
+        var burger = new Hamburger();
+
+        burger.addTopping(5);
+        burger.addTopping(6);
+        Hamburger.prototype.removeTopping= function (toppingDelete) {
+            var topping = this.getTopping()
+            try{
+                if(!toppingDelete || topping.length <1){
+                    throw  new Error("no topping")
+
+                }
+                if(topping.includes(toppingDelete)){
+                    topping.splice(topping.indexOf(toppingDelete),1)
+                    this.setTopping(topping)
+                }
+                else{
+                    throw new Error ("no topping for remove")
+                }
+            }catch(e){
+                console.log(e)
+            }
+        }
+        burger.removeTopping(5)
+        //console.log(burger.getTopping());
+
+
+
+
 /**
 * Добавить добавку к гамбургеру. Можно добавить несколько
 * добавок, при условии, что они разные.

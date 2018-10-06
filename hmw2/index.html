@@ -1,69 +1,183 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pizza</title>
     <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style320.css">
+    <link rel="stylesheet" href="css/style1200.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
+
 <body>
     <header class="navbar-menu">
-        <div class="container">
-           <input type="checkbox" id="check-menu">
-           <label class="navbar-title" for="check-menu">Navigation</label>
-            <!--<p class="navbar-title">Navigation</p>-->
-            <div class="burger-line one"></div>
-            <div class="burger-line two"></div>
-            <div class="burger-line tree"></div>
-            <div class="burger-line four"></div>
-            <nav class="nav-menu">
-                <a href="#" class="nav-menu-link">as1</a>
-                <a href="#" class="nav-menu-link">as2</a>
-                <a href="#" class="nav-menu-link">as3</a>
-                <a href="#" class="nav-menu-link">as4</a>
-                <a href="#" class="nav-menu-link">as5</a>
-            </nav>
+
+        <div class="nav">
+            <a href="#" class="navbar-title">Navigation</a>
+
+            <div class="navbar-block" id="navbar-block">
+                <a href="#" class="nav-block-link-burger">
+                            <i class="fas fa-bars"></i>
+                        </a>
+                <a href="#" class="nav-block-link-cross">
+                            <i class="fas fa-times"></i>
+                        </a>
+
+                <div class="navbar-menu-block" id="navbar-menu-block">
+                    <ul class="nav-menu">
+                        <li class="nav-menu-iten"><a href="#" class="nav-menu-link">Pizza delivery</a></li>
+                        <li class="nav-menu-iten"><a href="#" class="nav-menu-link">UA/UX salads</a></li>
+                        <li class="nav-menu-iten"><a href="#" class="nav-menu-link">Desserts</a></li>
+                        <li class="nav-menu-iten"><a href="#" class="nav-menu-link">About Us</a></li>
+                        <li class="nav-menu-iten"><a href="#" class="nav-menu-link">Contacts</a></li>
+                    </ul>
+                </div>
+            </div>
+            <a href="#" class="main-logo-link">
+                        <img src="img/navigation-logo.png" alt="logo" class="main-logo">
+                    </a>
         </div>
     </header>
+
     <section class="title-page bcg-1">
-        <div class="container">
-            <h4 class="title-page-name">All we need is Love.<br>
-            And pizza. Pizza is good.</h4>
-            <a href="" class="title-link">www.new-pizza.com</a>
+        <h4 class="title-page-name">All we need is Love.<br> And pizza. Pizza is good.</h4>
+        <a href="" class="title-link">www.new-pizza.com</a>
+    </section>
+
+    <section class="select-menu">
+        <a href="#" class="select-menu-link">
+            <div class=" bcg-2 select-menu-title">Pizza Delivery</div>
+            <div class="choise-link"></div>
+        </a>
+        <a href="#" class="select-menu-link">
+            <div class=" bcg-3 select-menu-title">UA_UX Salads</div>
+            <div class="choise-link"></div>
+        </a>
+        <a href="#" class="select-menu-link">
+            <div class="bcg-4 select-menu-title">Desserts</div>
+            <div class="choise-link"></div>
+        </a>
+    </section>
+
+    <section class="pre-section">
+        <div class="pre-section-flex">
+            <div class="pre-section-title-block">
+                <h3 class="pre_title">neque ero ullamcorper sed</h3>
+                <p class="pre_slogan">Ultrices cursus sit amet placerat tortor</p>
+            </div>
+            <img src="images/menu-logo.png" alt="dishes menu logo" class="pre-menu-logo">
+        </div>
+
+        <div class="eat-menu">
+            <div class="eat-menu-block">
+                <div class="main-title-menu">tincidunt at Mauris</div>
+                <div class="standard-title-menu">
+                    <h3 class="smoll-title-menu">id hendrerit velit quis</h3> <i class="fas fa-stroopwafel"></i>
+                </div>
+
+                <div class="eat-menu-standart">
+                    <div class="eat-price">
+                        <h4 class="eat-position">Lass aptent taciti</h4><em class="price">&#36;1200</em>
+                    </div>
+                    <p class="eat-position-description">Praesent hendrerit massa ut libero bibendum pulvinar</p>
+                      
+                       <div class="eat-price">
+                        <h4 class="eat-position">Nec fermentum nibh</h4><em class="price">&#36;1200</em>
+                    </div>
+                    <p class="eat-position-description">Praesent hendrerit massa ut libero bibendum pulvinar</p>
+
+                    <div class="eat-price">
+                        <h4 class="eat-position">Eu dolor accumsan pharetra</h4><em class="price">&#36;1200</em>
+                    </div>
+                    <p class="eat-position-description">Praesent hendrerit massa ut libero bibendum pulvinar</p>
+
+                    <div class="eat-price">
+                        <h4 class="eat-position">Non duis dictum eros nec</h4><em class="price">&#36;1200</em>
+                    </div>
+                    <p class="eat-position-description">Praesent hendrerit massa ut libero bibendum pulvinar</p>
+                </div>
+
+<div class="standard-title-menu">
+                    <h3 class="smoll-title-menu">id dolor Pellentesque</h3> <i class="fas fa-wine-glass-alt"></i>
+                </div>
+
+                <div class="eat-menu-standart">
+                    <div class="eat-price">
+                        <h4 class="eat-position">Lass aptent taciti</h4><em class="price">&#36;1200</em>
+                    </div>
+                    <p class="eat-position-description">Praesent hendrerit massa ut libero bibendum pulvinar</p>
+
+                    <div class="eat-price">
+                        <h4 class="eat-position">Nec fermentum nibh</h4><em class="price">&#36;1200</em>
+                    </div>
+                    <p class="eat-position-description">Praesent hendrerit massa ut libero bibendum pulvinar praedc. Hendrerit massa ut libero bibendum.</p>
+                </div>
+            </div>
+
+            <div class="eat-menu-block">
+                <div class="main-title-menu-2">vestibulum augue et</div>
+                
+<div class="standard-title-menu">
+                    <h3 class="smoll-title-menu">Augue Proin eleifend</h3><i class="fas fa-coffee"></i>
+                </div>
+                
+                <div class="eat-menu-standart">
+                    <div class="eat-price">
+                        <h4 class="eat-position">Lass aptent taciti</h4><em class="price">&#36;1200</em>
+                    </div>
+                    <p class="eat-position-description">Praesent hendrerit massa ut libero bibendum pulvinar</p>
+                    
+                    <div class="eat-price">
+                        <h4 class="eat-position">Nec fermentum nibh</h4><em class="price">&#36;1200</em>
+                    </div>
+                    <p class="eat-position-description">Praesent hendrerit massa ut libero bibendum pulvinar</p>
+                    
+                    <div class="eat-price">
+                        <h4 class="eat-position">Eu dolor accumsan pharetra</h4><em class="price">&#36;1200</em>
+                    </div>
+                    <p class="eat-position-description">Praesent hendrerit massa ut libero bibendum pulvinar</p>
+                
+                <div class="eat-price">
+                    <h4 class="eat-position">Non duis dictum eros nec</h4><em class="price">&#36;1200</em>
+                </div>
+                <p class="eat-position-description">Praesent hendrerit massa ut libero bibendum pulvinar</p>
+            </div>
+
+                <div class="standard-title-menu">
+                    <h3 class="smoll-title-menu">Pharetra at sit amet sem</h3><i class="fas fa-beer"></i>
+                </div>
+
+                <div class="eat-menu-standart">
+                    <div class="eat-price">
+                        <h4 class="eat-position">Lass aptent taciti</h4><em class="price">&#36;1200</em>
+                    </div>
+                    <p class="eat-position-description">Praesent hendrerit massa ut libero bibendum pulvinar</p>
+
+                    <div class="eat-price">
+                        <h4 class="eat-position">Nec fermentum nibh</h4><em class="price">&#36;1200</em>
+                    </div>
+                    <p class="eat-position-description">Praesent hendrerit massa ut libero bibendum pulvinar praedc. Hendrerit massa ut libero bibendum.</p>
+                </div>
+            </div>
         </div>
     </section>
-    <section class="select-menu bcg-2">
-        <div class="container">
-            <h2 class="select-menu-title">Pizza Delivery</h2>            
-        </div>
-    </section>
-    <section class="select-menu bcg-3">
-        <div class="container">
-            <h2 class="select-menu-title">UA_UX Salads</h2>            
-        </div>
-    </section>
-    <section class="select-menu bcg-4">
-        <div class="container">
-            <h2 class="select-menu-title">Desserts</h2>            
-        </div>
-    </section>
-    <section>
-        <h3>neque ero ullamcorper sed</h3>
-        <p>Ultrices cursus sit amet placerat tortor</p>
-        <h3><span class="color-text">tincidunt at Mauris</span></h3>
-        <ul class="eat-menu">
-           <li><span>id hendrerit velit quis</span></li>
-            <li><span>Lass aptent taciti</span><em>1200</em><br>
-            <span>Praesent hendrerit massa ut libero bibendum pulvinar</span></li>
-            <li><span>Nec fermentum nibh</span><em>1200</em><br><span>Praesent hendrerit massa ut libero bibendum pulvinar</span></li>
-            <li><span>Eu dolor accumsan pharetra</span><em>1200</em><br><span>Praesent hendrerit massa ut libero bibendum pulvinar</span></li>
-            <li><span>Non duis dictum eros nec</span><em>1200</em><br><span>Praesent hendrerit massa ut libero bibendum pulvinar</span></li>
-        </ul>
-    </section>
+
     <footer class="footer">
-       <div class="container">
-        <p class="footer-text">Best pizza from 2018 year<br>NewUA/UX salads - notboring, only fun.</p></div>
+        <a href="#" class="main-logo-link">
+            <img src="img/navigation-logo.png" alt="logo" class="main-logo footer-logo">
+        </a>
+
+        <div class="footer-text-block">
+            <p class="footer-text">Best pizza from 2018 year</p>
+            <p class="footer-text">NewUA/UX salads - notboring, only fun.</p>
+        </div>
     </footer>
+    <script src="js/script.js"></script>
 </body>
+
 </html>

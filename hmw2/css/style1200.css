@@ -1,0 +1,91 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+@media (min-width: 1200px) {
+
+/********************************* HEADER **********************************************************/
+
+.nav-menu {
+    margin-left: 37px;
+}
+
+.nav-menu-item {
+    margin-right: 32px;
+}
+
+.nav-menu-link {
+    font-size: 15px;
+}
+
+.title-page {
+    padding: 58px 0px 379px 37px;
+}
+
+.title-page-name {
+    font-size: 62px;
+}
+
+.title-link {
+    margin-top: 53px;
+    font-size: 38px;
+}
+
+.select-menu-title {
+    padding: 182px 0px 178px;
+    font-size: 43px;
+}
+
+/********************************* pre **********************************************************/
+
+.pre-section {
+    margin-bottom: 45px;
+}
+
+.pre_title {
+    font-size: 40px;
+}
+
+.main-title-menu {
+    font-size: 40px;
+    margin-bottom: 38px;
+}
+
+.main-title-menu-2  {
+    font-size: 40px;
+    padding: 23px 0px 23px 18px;
+    margin-bottom: 38px;
+}
+
+.standard-title-menu {
+    padding: 0px 25px;
+}
+
+.smoll-title-menu {
+    font-size: 30px;
+}
+
+.fa-stroopwafel,
+.fa-wine-glass-alt,
+.fa-coffee,
+.fa-beer {
+    font-size: 39px;
+}
+.eat-menu-standart {
+    padding: 0px 25px;
+    margin-bottom: 32px;
+}
+
+
+.eat-position {
+    font-size: 27px;
+}
+
+.eat-position-description {
+    margin-bottom: 22px;
+}
+
+
+/****************************************** FOOTER **********************************************************/
+
+}

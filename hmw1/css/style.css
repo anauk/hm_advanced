@@ -6,7 +6,9 @@ body {
     width: 1020px;
     margin: 0 auto;
 }
+
 /*----------------------------header contacts----------------*/
+
 .header-contacts {
     padding-top: 13px;
     padding-bottom: 13px;
@@ -14,6 +16,7 @@ body {
     box-shadow: 0px 1px 0px 0px #e2e2e2;
     text-align: right;
 }
+
 .header-contacts-text {
     margin-left: 11px;
     display: inline-block;
@@ -21,8 +24,9 @@ body {
     font-size: 15px;
     text-decoration: none;
 }
-.wertical-line::before { 
-margin-left: 11px;
+
+.wertical-line::before {
+    margin-left: 11px;
     float: right;
     content: "";
     background-color: #e2e2e2;
@@ -32,13 +36,15 @@ margin-left: 11px;
 }
 
 /*----------------header menu------------------*/
+
 .header-menu {
     padding-top: 36px;
     padding-bottom: 36px;
 }
+
 .icon-top-logo {
-    
-    margin-top: 6px;    
+
+    margin-top: 6px;
     float: left;
     margin-right: 7px;
     display: inline-block;
@@ -46,6 +52,7 @@ margin-left: 11px;
     width: 74px;
     height: 49px;
 }
+
 .logo-text-title {
     margin-top: 2px;
     float: left;
@@ -61,6 +68,7 @@ margin-left: 11px;
     color: #424242;
     font-size: 15px;
 }
+
 .navbar {
     display: flex;
     justify-content: flex-end;
@@ -81,9 +89,11 @@ margin-left: 11px;
     font-weight: 700;
     text-align: center;
 }
+
 .navbar-menu-link:hover {
     color: #de2b24;
 }
+
 .navbar-button {
 
     border-radius: 4px;
@@ -108,7 +118,7 @@ margin-left: 11px;
 }
 
 .company-title {
-   
+
     margin-bottom: 5px;
     color: #ffffff;
     font-size: 48px;
@@ -116,7 +126,7 @@ margin-left: 11px;
 }
 
 .company-slogan {
-    
+
     margin-bottom: 32px;
     color: #ffffff;
     font-size: 30px;
@@ -124,11 +134,11 @@ margin-left: 11px;
 }
 
 .btn-choise {
-       
+
     display: inline-block;
     padding: 25px 40px;
     background-color: #f8cd53;
-    width: 248px; 
+    width: 248px;
     color: #ffffff;
     font-size: 23.2px;
     font-weight: 700;
@@ -146,7 +156,7 @@ margin-left: 11px;
 }
 
 .description-title {
-    
+
     margin-bottom: 4px;
     color: #424242;
     font-size: 36px;
@@ -155,7 +165,7 @@ margin-left: 11px;
 }
 
 .description-slogan {
-    
+
     position: relative;
     margin-bottom: 63px;
     color: #424242;
@@ -177,7 +187,7 @@ margin-left: 11px;
 }
 
 .flex-container {
-    
+
     display: flex;
     justify-content: space-around;
 }
@@ -211,7 +221,17 @@ margin-left: 11px;
     background-color: #de2b24;
     text-align: center;
 }
-
+.wigth-line::after {
+    position: absolute;
+    content: "";
+    left: 47%;
+    margin: 0 auto;
+    margin-top: 12px;
+    display: block;
+    background-color: #fff;
+    width: 47px;
+    height: 5px;
+}
 .flex-position {
     display: flex;
     /*justify-content: center;
@@ -259,12 +279,30 @@ margin-left: 11px;
 }
 
 .section-contacts-title {
-    
+
     margin-bottom: 45px;
     color: #ffffff;
     font-size: 29px;
     font-weight: 700;
     line-height: 22px;
+}
+.flex-blok-item {
+    display: flex;
+    justify-content: center;
+}
+.i_icon {
+    display: inline-block;
+    padding: 12px 12px;    
+    margin-right: 20px;
+    width: 49px;
+    height: 49px;
+    border-radius: 1px;
+    border: 2px solid #515151;
+    box-sizing: border-box;
+
+}
+.i_icon:hover{
+    border-color:  #de2b24;
 }
 
 .section-contacts-slogan {
@@ -274,62 +312,6 @@ margin-left: 11px;
     color: #cecece;
     font-size: 14px;
     line-height: 22px;
-}
-
-/*
-Icon classes can be used entirely standalone. They are named after their original file names.
-
-Example usage in HTML:
-
-`display: block` sprite:
-<div class="icon-home"></div>
-
-To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
-
-// CSS
-.icon {
-  display: inline-block;
-}
-
-// HTML
-<i class="icon icon-home"></i>
-*/
-
-.icon-bg-facebook_icon {
-    background-image: url(../img/sprite.png);
-    background-position: -41px 0px;
-    width: 12px;
-    height: 22px;
-    display: inline-block;
-    margin-right: 16px;
-margin-left: 75px;
-}
-
-.icon-bg-google_plus_icon {
-    background-image: url(../img/sprite.png);
-    background-position: 0px 0px;
-    width: 20px;
-    height: 22px;
-    display: inline-block;
-    margin-right: 16px;
-}
-
-.icon-bg-in_icon {
-    background-image: url(../img/sprite.png);
-    background-position: -20px 0px;
-    width: 21px;
-    height: 19px;
-    display: inline-block;
-    margin-right: 16px;
-}
-
-.icon-bg-twitter_icon {
-    background-image: url(../img/sprite.png);
-    background-position: 0px -22px;
-    width: 21px;
-    height: 17px;
-    display: inline-block;
-    margin-right: 16px;
 }
 
 .send-msg-field {
@@ -377,3 +359,5 @@ margin-left: 75px;
     font-size: 14px;
     line-height: 27px;
 }
+
+
